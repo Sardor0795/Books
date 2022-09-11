@@ -26,6 +26,8 @@ const search = document.querySelector(".search");
 const img = document.querySelector(".img");
 const color = document.querySelector(".color");
 
+const allPrice = document.querySelector(".allPrice");
+
 const books = [];
 
 const add = () => {
@@ -146,6 +148,16 @@ const countBooks = () => {
   tragedy.textContent = tragedyCount;
 };
 
+const countPrice = () => {
+  let countAllPrice = 0;
+
+  books.forEach((book) => {
+    countAllPrice += +book.bPrice;
+  });
+
+  allPrice.textContent = countAllPrice;
+};
+
 button.addEventListener("click", () => {
   if (
     bName.value &&
@@ -162,6 +174,7 @@ button.addEventListener("click", () => {
     add();
     render(books);
     countBooks();
+    countPrice();
     bName.value = "";
     bGenre.value = "";
     bAuthor.value = "";
