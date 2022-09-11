@@ -58,6 +58,7 @@ const add = () => {
     bNumber: bNumber.value,
     bPrice: bPrice.value,
     color: color.value,
+    img: img.value,
   };
 
   books.push(book);
@@ -76,6 +77,7 @@ const render = (array) => {
         <th>Kitob haqida qisqa matn</th>
         <th>Qaysi do'konlarda sotiladi</th>
         <th>Kitoblar soni</th>
+        <th>Rasmi</th>
         <th>Kitoblar narhi</th>
         <th></th>
     </tr>
@@ -95,6 +97,7 @@ const render = (array) => {
             <td>${book.bAbout}</td>
             <td>${book.bShops}</td>
             <td>${book.bNumber}</td>
+            <td><img src="${book.img}" width="50"></td>
             <td>${book.bPrice}</td>
             <td><button onclick="dell(${i})">X</button></td>
         </tr>
