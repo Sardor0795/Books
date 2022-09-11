@@ -156,7 +156,8 @@ button.addEventListener("click", () => {
     bAbout.value &&
     bShops &&
     bNumber.value &&
-    bPrice.value
+    bPrice.value &&
+    img.value
   ) {
     add();
     render(books);
