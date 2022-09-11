@@ -182,6 +182,8 @@ button.addEventListener("click", () => {
     bAbout.value = "";
     bNumber.value = "";
     bPrice.value = "";
+    img.value = "";
+    (color.value = 0), 0, 0;
   }
 });
 
