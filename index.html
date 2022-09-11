@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+</head>
+<body>
+
+    <h1>Kitob ro'yxati</h1>
+
+    <div>Hamma kitoblar: <span class="all">0</span> </div>
+    <div>Dramma: <span class="dramma">0</span> </div>
+    <div>Comedy: <span class="comedy">0</span> </div>
+    <div>Tragedy: <span class="tragedy">0</span> </div>
+
+    <hr>
+
+        <input type="text" name="bName" placeholder="Kitob nomi">
+
+
+    <label>
+        Kitob janri:
+        <select name="genre">
+            <option value="Dramma">Dramma</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Tragedy">Tragedy</option>
+        </select>
+    </label>
+
+
+        <input type="text" name="author" placeholder="Kitob muallifi">
+
+
+        <input type="number" name="pageNumber" placeholder="Kitob sahifalar soni">
+
+
+
+        Kitob ishlab chiqaruvchi:
+
+        <label>
+            <input type="radio" name="company" value="NBM" placeholder="Kitob ishlab chiqaruvchi">NBM</label>
+        <label>
+            <input type="radio" name="company" value="NSS" placeholder="Kitob ishlab chiqaruvchi">NSS</label>
+        <label>
+            <input type="radio" name="company" value="NISSAN" placeholder="Kitob ishlab chiqaruvchi">NISSAN</label>
+
+
+
+        <textarea name="about" placeholder="Kitob haqida qisqa matn" cols="30" rows="10"></textarea>
+
+
+
+        Qaysi do'konlarda sotiladi:
+        <label><input value="Integro" name="shops" type="checkbox">Integro</label>
+        <label><input value="Makro" name="shops" type="checkbox">Makro</label>
+        <label><input value="Korzinka" name="shops" type="checkbox">Korzinka</label>
+
+
+            <input type="number" name="bNumber" placeholder="Kitoblar soni">
+
+
+            <input type="number" name="bookPrice" placeholder="Kitoblar narhi">
+
+
+        <button>Add</button>
+
+        <hr>
+           <input class="search" type="text" placeholder="Search">
+        <hr>
+
+        <table width="100%" border="1">
+
+        </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
