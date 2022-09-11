@@ -5,6 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Books</title>
+
+    <style>
+      .modal {
+        max-width: 200px;
+        max-height: 40px;
+        background-color: tomato;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 700;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transition: all 0.5s ease-in-out;
+        transform: translate(-50%, -1000%);
+      }
+      .modal.open {
+        transform: translate(-50%, -50%);
+      }
+    </style>
   </head>
   <body>
     <h1>Kitob ro'yxati</h1>
@@ -15,7 +36,7 @@
     <div>Tragedy: <span class="tragedy">0</span></div>
 
     <hr />
-        <div>Umumiy summa: <span class="allPrice"></span> </div>
+    <div>Umumiy summa: <span class="allPrice"></span></div>
     <hr />
 
     <input type="text" name="bName" placeholder="Kitob nomi" />
@@ -89,6 +110,8 @@
     <hr />
 
     <table width="100%" border="1"></table>
+
+    <div class="modal">Hammasini to'ldirish shart !!!</div>
 
     <script src="script.js"></script>
   </body>

@@ -28,6 +28,8 @@ const color = document.querySelector(".color");
 
 const allPrice = document.querySelector(".allPrice");
 
+const modal = document.querySelector(".modal");
+
 const books = [];
 
 const add = () => {
@@ -184,6 +186,11 @@ button.addEventListener("click", () => {
     bPrice.value = "";
     img.value = "";
     (color.value = 0), 0, 0;
+  } else {
+    modal.classList.add("open");
+    setTimeout(() => {
+      modal.classList.remove("open");
+    }, 2000);
   }
 });
 
