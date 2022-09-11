@@ -103,7 +103,7 @@ const render = (array) => {
             <td>${book.bNumber}</td>
             <td><img src="${book.img}" width="50"></td>
             <td>${book.bPrice}</td>
-            <td><button onclick="dell(${i})">X</button></td>
+            <td><button onclick="dell(${i})"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Octagon_delete.svg/2048px-Octagon_delete.svg.png" width="20"></button></td>
         </tr>
 
         `;
