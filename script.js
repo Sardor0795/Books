@@ -1,4 +1,3 @@
-// Umumiy kitoblar
 // Umumiy kitoblar summasi
 
 // Korzinkaga summa
@@ -23,6 +22,9 @@ const comedy = document.querySelector(".comedy");
 const tragedy = document.querySelector(".tragedy");
 
 const search = document.querySelector(".search");
+
+const img = document.querySelector(".img");
+const color = document.querySelector(".color");
 
 const books = [];
 
@@ -55,6 +57,7 @@ const add = () => {
     bShops: shops,
     bNumber: bNumber.value,
     bPrice: bPrice.value,
+    color: color.value,
   };
 
   books.push(book);
@@ -69,6 +72,7 @@ const render = (array) => {
         <th>Kitob muallifi</th>
         <th>Kitob sahifalar soni</th>
         <th>Kitob ishlab chiqaruvchi</th>
+        <th>Rangi</th>
         <th>Kitob haqida qisqa matn</th>
         <th>Qaysi do'konlarda sotiladi</th>
         <th>Kitoblar soni</th>
@@ -87,6 +91,7 @@ const render = (array) => {
             <td>${book.bAuthor}</td>
             <td>${book.pageNumber}</td>
             <td>${book.bCompany}</td>
+            <td style="background-color: ${book.color};"></td>
             <td>${book.bAbout}</td>
             <td>${book.bShops}</td>
             <td>${book.bNumber}</td>
